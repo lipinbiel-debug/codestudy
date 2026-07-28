@@ -1,0 +1,163 @@
+/* ===========================
+   XTudy - Style.css
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background: linear-gradient(135deg,#ff5a00,#ff7b00);
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+header img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+header h2{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ===========================
+   TITULO
+=========================== */
+
+strong h2{
+    text-align: center;
+    margin: 50px 0 40px;
+    color: #ff7b00;
+    font-size: 34px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.selectcontent{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.selectcontent h3{
+    width: 280px;
+}
+
+.selectcontent a{
+    text-decoration: none;
+    color: white;
+    background: #1b1b1b;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+    border: 2px solid transparent;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+}
+
+.selectcontent a:hover{
+    transform: translateY(-10px);
+    border: 2px solid #ff6a00;
+    box-shadow: 0 0 25px rgba(255,106,0,.5);
+}
+
+.selectcontent img{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.selectcontent a{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===========================
+   LISTA
+=========================== */
+
+ol{
+    width: 85%;
+    max-width: 1000px;
+    margin: 70px auto;
+    background: #181818;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
+}
+
+li{
+    color: #ff6a00;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+h4{
+    font-size: 19px;
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:900px){
+
+    header h2{
+        font-size:22px;
+    }
+
+    strong h2{
+        font-size:28px;
+    }
+
+    .selectcontent{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selectcontent h3{
+        width: 100%;
+        max-width: 330px;
+    }
+
+    ol{
+        width:95%;
+        padding:25px;
+    }
+
+    li{
+        font-size:24px;
+    }
+
+    h4{
+        font-size:18px;
+    }
+
+}
